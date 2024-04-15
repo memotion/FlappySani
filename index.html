@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, , initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>flappySani</title>
+    <link rel="stylesheet" href="flappystyle.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="icon" href="photos/char.png">
+    
+</head>
+
+<body>
+    <div id="startGame">
+        
+
+        <img src="photos/bg.png" alt="">
+        <img id="startLogo" src="photos/dogPix.png" style="top: 42%;">
+        
+        <button id="startButton" class="fiveth-button" onclick="displayGame()">Start game</button>
+  
+        <h6 id="powered"></h6>
+    </div>
+   
+        <canvas id="canvas1" hidden></canvas>
+
+
+
+    <img id="player" src="photos/dogs.png">
+    <img id="background" src="photos/bg3.png">
+    <img id="topPipe" src="photos/topPipeBlack.png">
+    <img id="bottomPipe" src="photos/bottomPipeBlack.png">
+
+    <div id="endGame" hidden>
+        <img src="photos/bg.png" alt="">
+        <img id="startLogo" src="photos/dogPix.png" style="top: 82%;">
+        <h1 id="gameOverText">Game Over</h1>
+        <h1 id="score"> </h1>
+        <h1 id="Highscore"></h1>
+        <button id="restartButton" onclick="restart()">Restart game</button>
+
+        <button id="shareButton" value="Send Email" onclick="">share score</button>
+        
+        <h6 id="powered"></h6>
+    </div>
+
+
+    <script type="module" src="main.js"></script>
+    <script src="logic.js"></script>
+    <script type="module" src="player.js"></script>
+
+</body>
+
+</html>
